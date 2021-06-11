@@ -1,5 +1,5 @@
 public class SelectionSort {
-    public static int[] selectionSort(int[] nums) {
+    public static int[] sortArray(int[] nums) {
         for (int i = 0; i < nums.length - 1; i++) {
             int min = nums[i];
             int position = i;

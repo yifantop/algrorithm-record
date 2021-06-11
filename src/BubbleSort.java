@@ -1,5 +1,5 @@
 class BubbleSort {
-    public static int[] bubbleSort(int[] nums) {
+    public static int[] sortArray(int[] nums) {
         for (int i = 0; i < nums.length - 1; i++) {
             boolean flag = false;
             for (int j = nums.length - 1; j > i; j--) {
