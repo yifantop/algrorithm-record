@@ -1,4 +1,4 @@
-class Solution {
+class BubbleSort {
     public static int[] bubbleSort(int[] nums) {
         for (int i = 0; i < nums.length - 1; i++) {
             boolean flag = false;
@@ -17,11 +17,5 @@ class Solution {
         return nums;
     }
 
-    public static void main(String[] args) {
-        int[] nums = new int[]{5, 6, 9, 7, 4, 1, 2, 3, 6, 8, 5};
-        int[] result = bubbleSort(nums);
-        for (int e : result) {
-            System.out.print(e + " ");
-        }
-    }
+
 }
