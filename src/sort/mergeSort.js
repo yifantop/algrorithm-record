@@ -48,7 +48,7 @@ function merge(arr, startOfLeftArr, endOfLeftArr, startOfRightArr, endOfRightArr
 }
 
 const test = function () {
-  const arr = [1];
+  const arr = [1, 0];
   mergeSort(arr, 0, arr.length - 1);
   console.log(arr);
 }
