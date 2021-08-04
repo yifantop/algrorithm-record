@@ -33,7 +33,8 @@ function sumOfLowerNumber(arr, low, high) {
     let num = startOfLeftArr;
     let mergedArr = [];
     while (startOfLeftArr <= endOfLeftArr && startOfRightArr <= endOfRightArr) {
-      if (arr[startOfLeftArr] <= startOfRightArr) {
+      // 此处是<，保证在相等的时候，先拿走右边的数
+      if (arr[startOfLeftArr] < startOfRightArr) {
         sum += arr[startOfLeftArr] * (endOfRightArr - startOfRightArr + 1);
         mergedArr.push(arr[startOfLeftArr]);
         startOfLeftArr++;
