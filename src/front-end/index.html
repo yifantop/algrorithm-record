@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>本算法解决输入框输入时的防抖和处理中文输入问题</h3>
+    <label>
+        <input type="text">
+    </label>
+    <script>
+        const input = document.querySelector('input');
+        function debounce(delay) {
+          let timer;
+          return () => {
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+              console.log(input.value);
+            }, delay);
+          }
+        }
+        const event_debounce = debounce(1000);
+        let isChinese = false;
+        input.addEventListener('input', () => {
+          if (!isChinese) {
+            event_debounce();
+          }
+        });
+        input.addEventListener('compositionstart', () => {
+          isChinese = true;
+        });
+        input.addEventListener('compositionend', () => {
+          event_debounce();
+          isChinese = false;
+        });
+    </script>
+</body>
+</html>
