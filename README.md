@@ -6,3 +6,7 @@
 - [按某个值划分数组-2](src/sort/divide-2-part-upgrades.js)
 ### 二分搜索
 - [在排序数组中查找元素的第一个和最后一个位置](src/binarySearch/code_34.js)
+### 双指针
+- [三数之和](src/two-pointer/3sum.js)
+- [删除排序数组中重复过的数](src/two-pointer/deleteDuplicateInSortArr.js)
+- [比较两个含退格符的字符串是否相等](src/two-pointer/backspaceCompare.js)
