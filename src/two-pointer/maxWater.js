@@ -25,7 +25,7 @@ function maxArea(height) {
 }
 
 function test() {
-    let height = [1,8,6,2,5,4,8,3,7];
+    let height = [1, 8, 6, 2, 5, 4, 8, 3, 7];
     let res = maxArea(height);
     console.log(res);
 }
